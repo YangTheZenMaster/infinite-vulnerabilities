@@ -1,0 +1,24 @@
+{layout name="layout" /}
+<h4 class="h4">评论列表</h4>
+<table class="table table-bordered">
+    <tr class="success">
+        <th>ID</th>
+        <th>用户名</th>
+        <th>邮箱</th>
+        <th>内容</th>
+        <th>创建时间</th>
+        <th>操作</th>
+    </tr>
+
+    {foreach $data as $value}
+    <tr>
+        <td>{$value.id}</td>
+        <td>{$value.author}</td>
+        <td>{$value.email}</td>
+        <td>{$value.content}</td>
+        <td>{$value.create_time}</td>
+        <td><a href="{:url('admin/Comment/delete')}?id={$value.id}" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>删除</a></td>
+    </tr>
+    {/foreach}
+</table>
+<div align="center">{$page}</div>

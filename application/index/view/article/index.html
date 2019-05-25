@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+    <meta charset="utf-8">
+    <title>矿大食堂</title>
+    <!-- Mobile Specific Metas
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="/css/zerogrid.css">
+    <link rel="stylesheet" href="/css/indexstyle.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+    <!--[if lt IE 8]>
+    <div style=' clear: both; text-align:center; position: relative;'>
+        <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+            <img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+        </a>
+    </div>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="/js/html5.js"></script>
+    <script src="/js/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+    <link href='/img/favicon.ico' rel='icon' type='image/x-icon'/>
+
+</head>
+<body>
+<div class="wrap-body zerogrid">
+    <!--------------Header--------------->
+    <header>
+        <div class="wrap-header">
+            <div id="logo">
+                <a href="#"><h1>矿大食堂</h1></a>
+                <p> 百十年校友共同推荐Menu</p>
+            </div>
+
+            <nav>
+                <div class="wrap-nav">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="{:url('http://cumtdininghall.com/index/index/index')}">首页</a></li>
+                            <li><a href="{:url('http://cumtdininghall.com/index/index/index')}">留言板</a></li>
+                            <li><a href="{:url('http://cumtdininghall.com/index/index/index')}">友情链接</a></li>
+                            <li><a href="http://cumt.edu.cn">矿大官网</a></li>
+                            <li><a href="http://110.cumt.edu.cn">校庆网</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--------------Content--------------->
+    <section id="content">
+        <div class="wrap-content">
+            <div class="row block">
+                <div id="main-content" class="col-2-3">
+                    <div class="wrap-col">
+                        <article>
+                            <div class="heading">
+                                <h2>特色把子肉</h2>
+                            </div>
+                            <div class="content">
+                                <img src="/img/bazirou.jpg" width="100%"/>
+                                <p>把子肉是中华名小吃之一，是华东地区极具特色的小吃。根据传统鲁菜食谱所述，早在清朝时期，鲁地即流传有用草绳捆扎五花肉，加以酱油炖煮而成的把子肉，其味入口即化，香而不腻。流传于鲁西、鲁南，即现在济南、济宁、菏泽、枣庄、临沂、徐州一带。把子肉一般还配以其他配菜一同炖煮，如鲅鱼、四喜肉丸、油炸豆腐片、兰花干、青椒、海带结，面筋、豆筋、豆皮、腐竹、腐衣、素鸡片、虎皮鸡蛋、黄花菜、小青菜、豆角、香肠、排骨、肘子、鸡腿等。再配上一碗浇上肉汤的白米干饭，吃起来满嘴流油，回味悠长，口口留香。</p>
+                                <p>相传东汉末年，天下大乱。刘备、关羽、张飞三人，彼此惺惺相惜，决定拜“把子”。张飞是屠户，主要屠猪。哥几个拜也拜完了，就把猪肉萱花豆腐，弄在一个锅里煮。 后来，隋朝时，由鲁地的一位名厨，将此做法进行了完善，精选带皮猪肉，放入坛子炖，靠秘制酱油调味，炖好的把子肉肥不腻、瘦不柴，色泽鲜亮，入口醇香，价格公道，深受老百姓的喜爱。这样的做法和刘关张结拜兄弟的传奇结合，就成了今天的把子肉。</p>
+                            </div>
+                        </article>
+                        <section>
+                            <h3>Leave a Comment</h3>
+
+                            <form id="contact-form" action="insert" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="author" placeholder="昵称" name="author">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="email" placeholder="邮箱" name="email">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="content" placeholder="评论……" name="content">
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="manuelfilename" placeholder="请输入要上传的文件名+格式" name="manuelfilename">
+                                    </div>
+                                </div>
+                                <input type="file" name="file"/>
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&nbsp;提交</button>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
+                <div id="sidebar" class="col-1-3">
+                    <div class="wrap-col">
+                        <div class="box">
+                            <div class="heading"><h2>Popular Post</h2></div>
+                            <div class="content">
+                                <div class="post">
+                                    <img src="/img/baozi.jpg" width="50px"/>
+                                    <h4><a href="#">包子</a></h4>
+                                    <p>[...]</p>
+                                </div>
+                                <div class="post">
+                                    <img src="/img/bazirou.jpg" width="50px"/>
+                                    <h4><a href="#">把子肉</a></h4>
+                                    <p>[...]</p>
+                                </div>
+                                <div class="post">
+                                    <img src="/img/shiguobanfan.jpg" width="50px"/>
+                                    <h4><a href="#">石锅拌饭</a></h4>
+                                    <p>[...]</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------Footer--------------->
+    <footer>
+        <div class="wrap-footer">
+            <div class="row">
+                <div class="col-1-3">
+                    <div class="wrap-col">
+                        <div class="box">
+                            <div class="heading"><h2>画 廊</h2></div>
+                            <div class="content gallery">
+                                <a href="#"><img src="/img/shiguobanfan.jpg" width="120"/></a>
+                                <a href="#"><img src="/img/bazirou.jpg" width="120"/></a>
+                                <a href="#"><img src="/img/baozi.jpg" width="120"/></a>
+                                <a href="#"><img src="/img/lamian.jpg" width="120"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="wrap-col">
+                        <div class="box">
+                            <div class="heading"><h2>百十校庆</h2></div>
+                            <div class="content">
+                                <a href="http://110.cumt.edu.cn/" target="_blank"><img src="/img/cumt.jpeg" width="150px" height="450px"/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1-3">
+                    <div class="wrap-col">
+                        <div class="box">
+                            <div class="heading"><h2>关于作者</h2></div>
+                            <div class="content">
+                                <p>中国矿业大学16级</p>
+                                <p>010-65781200</p>
+                                <p>地址: 江苏省徐州市大学路一号</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+</body></html>

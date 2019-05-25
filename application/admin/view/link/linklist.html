@@ -1,0 +1,24 @@
+{layout name="layout" /}
+<h4 class="h4">友情链接列表<a class="btn-add" href="{:url('http://cumtdininghall.com/admin/Link/add')}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>添加友情链接</a>
+</h4>
+<table class="table table-bordered">
+    <tr class="success">
+        <th>ID</th>
+        <th>名称</th>
+        <th>url</th>
+        <th>创建时间</th>
+        <th>操作</th>
+    </tr>
+
+    {foreach $data as $value}
+    <tr>
+        <td>{$value.id}</td>
+        <td>{$value.name}</td>
+        <td>{$value.url}</td>
+        <td>{$value.create_time}</td>
+        <td><a href="edit?id={$value.id}" class="btn btn-primary"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>&nbsp;修改</a>&nbsp;
+            <a href="delete?id={$value.id}" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>&nbsp;删除</a></td>
+    </tr>
+    {/foreach}
+</table>
+<div align="center">{$page}</div>

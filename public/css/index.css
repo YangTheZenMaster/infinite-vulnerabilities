@@ -1,0 +1,36 @@
+.my-nav {
+    background: linear-gradient(90deg, #0bc4ff, #43fcff);
+}
+
+.row {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar-brand img {
+    height: 100%;
+}
+
+.btn-add {
+    cursor: pointer;
+    float: right;
+    font-size: 16px;
+}
+
+.nav-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-right: 20px;
+    color: white;
+}
+
+.my-left {
+    padding-left: 20px;
+}
+
+.my-right {
+    border: gray solid 1px;
+    border-radius: 5px;
+}
+

@@ -1,0 +1,153 @@
+body{
+	font-family: 微软雅黑!important;
+}
+.container-fluid {
+	padding:0;
+}
+.navbar-default .navbar-collapse {
+    border-color: #009688;
+    background: #393d49;
+    position: relative;
+    z-index: 9999;
+    height: 440px;
+    overflow: scroll;
+}
+.navbar {
+
+    margin-bottom: 0px;
+    background:#393d49;
+    position: fixed;
+    width: 100%;
+    border-radius:0;
+    border:none;
+    border-bottom: 5px solid #009688;
+
+}
+.navbar>a{
+	background: #393d49;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #c2c2c2;
+    line-height: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.navbar-default .navbar-nav>li>a:hover {
+	background: #2b2e37;
+    color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus {
+	background: #009688;
+    color: #fff;
+}
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after {
+	background-color:#009688;
+}
+.layui-layout-admin .layui-side {
+    top: 70px;
+    z-index: 9;
+    display: none;
+}
+a:-webkit-any-link{
+	text-decoration: none;
+}
+.selectServ select{
+	width:90px;
+	height:30px;
+	border:1px solid #ccc;
+	margin-top:18px;
+	border-radius:3px;
+}
+
+.layui-nav-itemed .layui-nav-child {
+    display: block;
+    padding: 0;
+    text-indent: 15px;
+}
+
+.fishparams{
+	background: #f0f0f0;
+	padding: 10px 0;
+	margin-bottom: 10px;
+	color: #996633;
+}
+.breadcrumb fieldset{
+	width: 92%;
+}
+.excelOut{
+	float: right;
+	margin-top: -58px;
+    margin-right: 20px;
+}
+.flocation select{
+	width:100px;
+	height:38px;
+	border:1px solid #e6e6e6;
+	border-radius:3px
+}
+.tabWrap{
+	padding: 0 10px;
+}
+
+.dt-button.buttons-excel.buttons-html5{
+	background: #199f93;
+	border: 1px solid #199f93;
+	color: #fff;
+	font-weight:bold;
+	padding: 13px 20px;
+}
+.dt-button.buttons-excel.buttons-html5:hover,.dt-button.buttons-excel.buttons-html5:focus{
+	background: #199f93;
+	border: 1px solid #199f93;
+	color: #fff;
+	font-weight:bold;
+}
+.dataTables_paginate .paginate_button{
+	border: 1px solid #c2c2c2!important;
+    border-radius: 3px!important;
+}
+.dataTables_wrapper .dataTables_paginate a.paginate_button.current{
+	background: #009688!important;
+	color: #fff!important;
+}
+.dataTables_wrapper .dataTables_paginate a.paginate_button:hover{
+	background: #c2c2c2!important;
+}
+.tabWrap thead{
+	background: #f1f1f1;
+}
+.fishparams{
+	text-align: center;
+}
+.layui-form-label {
+     width: auto;
+  }
+.layui-layout-admin .layui-side ,.layui-body{
+    z-index: -1;
+}
+/*修改密码*/
+.modifyPwd {
+	width: 500px;
+
+}
+.modifyPwd label{
+	width: 110px;
+}
+.modifyPwd i{
+	color: red;
+}
+.modifyPwd .msBtn{
+	float: right;
+	margin-right: 190px;
+}
+.footer p{
+	padding-top: 10px;
+}
+/*登录页*/
+.loginBd{height:100%;background:linear-gradient(90deg, #0bc4ff, #43fcff);overflow:hidden;}
+.loginBd canvas{z-index:-1;position:absolute;}
+.loginBd .eyes{position: absolute;right:5px;top:9px;cursor: pointer;}
+.loginBd .eyes img{position:absolute;right:0;}
+.loginBd .openEyes{display: none;}
