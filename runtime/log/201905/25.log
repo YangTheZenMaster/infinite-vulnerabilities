@@ -1,0 +1,358 @@
+---------------------------------------------------------------
+[ 2019-05-25T09:33:16+08:00 ] 127.0.0.1 GET cumtdininghall.com/admin/user/index
+[运行时间：0.466939s] [吞吐率：2.14req/s] [内存消耗：1,382.80kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T09:33:18+08:00 ] 127.0.0.1 GET cumtdininghall.com/admin/index/login.html
+[运行时间：0.083283s] [吞吐率：12.01req/s] [内存消耗：1,356.52kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/admin/user/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->login[ D:\phpstudy\PHPTutorial\WWW\cumtdininghall\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\public/../application/admin\view\index\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T09:33:18+08:00 ] 127.0.0.1 GET cumtdininghall.com/captcha.html
+[运行时间：0.103550s] [吞吐率：9.66req/s] [内存消耗：1,078.80kb] [文件加载：31]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'method',
+  'method' => 
+  array (
+    0 => '\\think\\captcha\\CaptchaController',
+    1 => 'index',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/admin/index/login.html',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+  'id' => NULL,
+)
+[ info ] [ RUN ] think\captcha\CaptchaController->index[ D:\phpstudy\PHPTutorial\WWW\cumtdininghall\vendor\topthink\think-captcha\src\CaptchaController.php ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:09:18+08:00 ] 127.0.0.1 GET cumtdininghall.com/
+[运行时间：0.055040s] [吞吐率：18.17req/s] [内存消耗：1,348.30kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\cumtdininghall\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:09:18+08:00 ] 127.0.0.1 GET cumtdininghall.com/font/RobotoSlabLight.woff
+[运行时间：0.150994s] [吞吐率：6.62req/s] [内存消耗：1,090.92kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'font',
+    1 => 'RobotoSlabLight.woff',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/css/indexstyle.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'origin' => 'http://cumtdininghall.com',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:09:19+08:00 ] 127.0.0.1 GET cumtdininghall.com/font/DroidSans.woff
+[运行时间：0.018917s] [吞吐率：52.86req/s] [内存消耗：1,090.93kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'font',
+    1 => 'DroidSans.woff',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/css/indexstyle.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'origin' => 'http://cumtdininghall.com',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:09:24+08:00 ] 127.0.0.1 GET cumtdininghall.com/index/article/index.html
+[运行时间：0.089822s] [吞吐率：11.13req/s] [内存消耗：1,356.16kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'article',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Article->index[ D:\phpstudy\PHPTutorial\WWW\cumtdininghall\application\index\controller\Article.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\public/../application/index\view\article\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:09:24+08:00 ] 127.0.0.1 GET cumtdininghall.com/font/RobotoSlabLight.woff
+[运行时间：0.026960s] [吞吐率：37.09req/s] [内存消耗：1,090.92kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'font',
+    1 => 'RobotoSlabLight.woff',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/css/indexstyle.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'origin' => 'http://cumtdininghall.com',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:09:25+08:00 ] 127.0.0.1 GET cumtdininghall.com/font/DroidSans.woff
+[运行时间：0.020039s] [吞吐率：49.90req/s] [内存消耗：1,090.93kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'font',
+    1 => 'DroidSans.woff',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/css/indexstyle.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'origin' => 'http://cumtdininghall.com',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:44:42+08:00 ] 127.0.0.1 GET cumtdininghall.com/
+[运行时间：0.034339s] [吞吐率：29.12req/s] [内存消耗：1,348.15kb] [文件加载：41]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpstudy\PHPTutorial\WWW\cumtdininghall\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:44:42+08:00 ] 127.0.0.1 GET cumtdininghall.com/font/RobotoSlabLight.woff
+[运行时间：0.023434s] [吞吐率：42.67req/s] [内存消耗：1,090.92kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'font',
+    1 => 'RobotoSlabLight.woff',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/css/indexstyle.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'origin' => 'http://cumtdininghall.com',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-05-25T10:44:43+08:00 ] 127.0.0.1 GET cumtdininghall.com/font/DroidSans.woff
+[运行时间：0.022489s] [吞吐率：44.47req/s] [内存消耗：1,090.93kb] [文件加载：35]
+[ info ] [ LANG ] D:\phpstudy\PHPTutorial\WWW\cumtdininghall\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'font',
+    1 => 'DroidSans.woff',
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'pgv_pvi=7596739584; PHPSESSID=s2d9d7701dlkhlvs51qa32vms0; thinkphp_show_page_trace=0|0',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://cumtdininghall.com/css/indexstyle.css',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'origin' => 'http://cumtdininghall.com',
+  'connection' => 'close',
+  'host' => 'cumtdininghall.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File

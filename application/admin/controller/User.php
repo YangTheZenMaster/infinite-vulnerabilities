@@ -190,7 +190,7 @@ class User extends Base{
                     exit;
                 }else {
                     session(null);
-                    $this->error('两次密码不一致！出于安全考虑，请退出重新登录','Index/login');
+                    $this->error('两次密码不一致！出于安全考虑，请退出重新登录！','Index/login');
                     exit;
                 }
             }
