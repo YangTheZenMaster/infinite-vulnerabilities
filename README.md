@@ -1,3 +1,10 @@
+================
+开发PHP版本：5.6.27
+THINKPHP版本：5.0.24
+powered by apache
+作者：科科
+
+
 ThinkPHP 5.0
 ===============
 
@@ -133,6 +140,3 @@ ThinkPHP® 商标和著作权所有者为上海顶想信息科技有限公司。
 更多细节参阅 [LICENSE.txt](LICENSE.txt)
 
 
-开发PHP版本：7.0.12
-  THINKPHP版本：5.0.24
-作者：科科
