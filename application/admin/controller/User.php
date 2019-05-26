@@ -115,15 +115,19 @@ class User extends Base{
     {
 
         $data=input('post.');
-        libxml_disable_entity_loader(false);
+        //libxml_disable_entity_loader(false);
+        libxml_disable_entity_loader(true);
         //XXE here////////////////////////////////////////////////
         //如果POST了xml，就使用xml里的数据录入数据库
-        if(isset($data['xml'])) {
-            $xml = $_POST['xml'];
-            echo $xml;
-            if ($xml != false) {
+        if(isset($data["xml"])) {
+            //echo $_POST["xml"].'<br>';
+            $xml=htmlspecialchars($_POST["xml"]);
+     //       echo $xml.'<br>';
+            $xml=$_POST["xml"];
+            if ($xml != null) {
                 $xeml = simplexml_load_string($xml);
-                print_r($xeml);
+         //       print_r($xeml);
+                echo '<br>';
             }
             $result = [];
             foreach ($xeml as $K => $V) {
@@ -144,7 +148,7 @@ class User extends Base{
                 $this->error('新增失败');
             }
         }
-        else {
+        else {//否则，接受html提交的内容作为新增信息
             $val=new UserValidate();
             if(!$val->check($data)) {
                 $this->error($val->getError());//验证失败
