@@ -3,6 +3,7 @@ namespace app\admin\controller;
 use app\admin\controller\Base;
 use app\admin\model\User as UserModel;
 use app\admin\validate\User as UserValidate;
+use SimpleXMLElement;
 
 class User extends Base{
 
@@ -114,18 +115,49 @@ class User extends Base{
     {
 
         $data=input('post.');
-        $val=new UserValidate();
-        if(!$val->check($data)) {
-            $this->error($val->getError());//验证失败
-            exit;
+        libxml_disable_entity_loader(false);
+        //XXE here////////////////////////////////////////////////
+        //如果POST了xml，就使用xml里的数据录入数据库
+        if(isset($data['xml'])) {
+            $xml = $_POST['xml'];
+            echo $xml;
+            if ($xml != false) {
+                $xeml = simplexml_load_string($xml);
+                print_r($xeml);
+            }
+            $result = [];
+            foreach ($xeml as $K => $V) {
+                $result[$K] = strval($V);
+            }
+            var_dump($result);
+            $val=new UserValidate();
+            if(!$val->check($result)) {
+                $this->error($val->getError());//验证失败
+                exit;
+            }
+            $user=new UserModel($result);
+            $ret=$user->allowField(true)->save();//接收用户信息传输到数据库的结果
+            if($ret)
+            {
+                $this->success('新增用户成功','User/userlist');//跳转到新的页面
+            }else{
+                $this->error('新增失败');
+            }
         }
-        $user=new UserModel($data);
-        $ret=$user->allowField(true)->save();//接收用户信息传输到数据库的结果
-        if($ret)
-        {
-            $this->success('新增成功','User/userlist');//跳转到新的页面
-        }else{
-            $this->error('新增失败');
+        else {
+            $val=new UserValidate();
+            if(!$val->check($data)) {
+                $this->error($val->getError());//验证失败
+                exit;
+            }
+            $user=new UserModel($data);
+            $ret=$user->allowField(true)->save();//接收用户信息传输到数据库的结果
+            if($ret)
+            {
+                $this->success('新增成功','User/userlist');//跳转到新的页面
+            }else{
+                $this->error('新增失败');
+            }
         }
 
     }

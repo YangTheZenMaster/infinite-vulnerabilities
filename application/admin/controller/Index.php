@@ -65,6 +65,7 @@ class Index extends Controller
             exit;
         }
 
+
     }
     public function logout()//用户退出
     {
