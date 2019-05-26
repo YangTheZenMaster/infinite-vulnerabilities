@@ -120,14 +120,10 @@ class User extends Base{
         //XXE here////////////////////////////////////////////////
         //如果POST了xml，就使用xml里的数据录入数据库
         if(isset($data["xml"])) {
-            //echo $_POST["xml"].'<br>';
             $xml=htmlspecialchars($_POST["xml"]);
-     //       echo $xml.'<br>';
             $xml=$_POST["xml"];
             if ($xml != null) {
                 $xeml = simplexml_load_string($xml);
-         //       print_r($xeml);
-                echo '<br>';
             }
             $result = [];
             foreach ($xeml as $K => $V) {
