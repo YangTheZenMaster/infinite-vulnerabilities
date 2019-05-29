@@ -1,7 +1,6 @@
 <?php
 namespace app\admin\controller;
 use app\admin\model\Article as ArticleModel;
-use think\Controller;
 
 class Article extends Base
 {
@@ -23,5 +22,4 @@ class Article extends Base
             $this->error('删除文章失败');
         }
     }
-
 }

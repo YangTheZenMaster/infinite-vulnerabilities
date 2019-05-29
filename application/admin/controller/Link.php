@@ -23,7 +23,6 @@ class Link extends Base
     {
 
         $id=$_GET["id"];
-
         /*
         //file injection point here////////////////////
         $id = str_replace( array( "http://", "https://" ), "", $id );
@@ -65,7 +64,7 @@ class Link extends Base
     public function insert()
     {
         //安全版本
-/*
+
         $data=input('post.');
         $data['name']=htmlspecialchars($data['name'], ENT_QUOTES);
         $data['url']=htmlspecialchars($data['url'], ENT_QUOTES);//只有设置了quotestyle 选项为ENT_QUOTES才会过滤单引号
@@ -77,10 +76,10 @@ class Link extends Base
         }else{
             $this->error('新增失败');
         }
-*/
+
         //end here
 
-
+        /*
         $data=input('post.');
         $name=strtolower($data['name']);
         $url=strtolower($data['url']);
@@ -103,7 +102,7 @@ class Link extends Base
         else {
             $this->error('数据库连接失败');
         }
-
+        */
     }
     public function delete()
     {

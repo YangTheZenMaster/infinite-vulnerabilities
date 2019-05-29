@@ -30,18 +30,23 @@ class Index extends Controller
         */
 
 
-        //thinkphp使用了pdo查询数据库，难以构造sql注入。这里使用原生sql语句，以构造sql注入点
-        header("Content-Type:text/html;charset=gbk");
+        //thinkphp使用了pdo查询数据库，不太明白sql注入原理。这里使用原生sql语句构造sql注入点
+        //header("Content-Type:text/html;charset=gbk");
         $data=input('post.');
         $name=$data['name'];
-        $name=addslashes($name);//可以很好地防御字符型注入
+        //$name=addslashes($name);//可以很好地防御字符型注入
         $password=$data['password'];
         $backpassword=md5($password);
         $con=mysqli_connect("localhost","root","root");
         if($con)
         {
             mysqli_select_db($con,'think');
-            mysqli_query($con,"set names gbk");
+            //mysqli_query($con,"set names gbk");
+            //修复
+            mysqli_set_charset($con,"gbk");
+            $name=mysqli_real_escape_string($con,$name);
+            echo $name;
+            //end here
             $sql = "SELECT * FROM think_user WHERE (name = '$name' AND password = '$backpassword') AND `think_user`.`delete_time` IS NULL LIMIT 1";
             $ret=mysqli_query($con,$sql);
             $row=mysqli_fetch_array($ret);
